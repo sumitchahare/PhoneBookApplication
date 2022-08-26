@@ -12,8 +12,15 @@ import javax.persistence.Table;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Entity
 @Table(name = "CONTACT_DTLS")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Contact {
 
 	@Id
